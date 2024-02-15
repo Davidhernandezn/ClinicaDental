@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ......................... 12
+2. Variables para colores...................... 13
+3. Estilos generales .............. 
+-------------------- */
+
+
+/* ----- assets ----- */
+@import url(assets/css/fonts.css);
+@import url(assets/css/variables-color.css);
+
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+* {
+	--primary-font-family: "Inter";
+}
+
+ body {
+	font-family: var(--primary-font-family);
+} 
+
+h1{
+    color: var(--color-primary);
+}
