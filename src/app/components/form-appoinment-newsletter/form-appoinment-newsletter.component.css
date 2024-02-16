@@ -1,0 +1,68 @@
+.card-newsletter {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #216582;
+    border-radius: 20px;
+    overflow: hidden; /* Oculta el contenido que se desborda de la tarjeta */
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .form-group {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group input[type="email"],
+  .form-group input[type="text"],
+  .form-group button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(33.33% - 10px);
+    max-width: 250px;
+    margin: 0 5px;
+    box-sizing: border-box;
+  }
+
+  .corner-circle {
+    position: absolute;
+    top: -120px; /* Ajusta la posición para que esté pegado a la esquina superior */
+    left: -60px; /* Ajusta la posición para que esté pegado a la esquina superior */
+    width: 200px; /* Ajusta el tamaño del círculo */
+    height: 200px; /* Ajusta el tamaño del círculo */
+    border: 2px solid #4CAF50; /* Color del borde */
+    border-radius: 50%; /* Hace que el borde tenga forma de círculo */
+    z-index: 1;
+    overflow: hidden; /* Oculta el contenido que se desborda del círculo */
+  }
+
+  .corner-circle-bajo {
+    position: absolute;
+    bottom: -120px; /* Ajusta la posición para que esté pegado a la esquina superior */
+    right: -60px; /* Ajusta la posición para que esté pegado a la esquina superior */
+    width: 200px; /* Ajusta el tamaño del círculo */
+    height: 200px; /* Ajusta el tamaño del círculo */
+    border: 2px solid #4CAF50; /* Color del borde */
+    border-radius: 50%; /* Hace que el borde tenga forma de círculo */
+    z-index: 1;
+    overflow: hidden; /* Oculta el contenido que se desborda del círculo */
+  }
+
+
+  @media (max-width: 768px) {
+    .form-group input[type="email"],
+    .form-group input[type="text"],
+    .form-group button {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
