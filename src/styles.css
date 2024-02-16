@@ -18,12 +18,13 @@ Tabla de contenidos:
 /* ----------------------------- */
 * {
 	--primary-font-family: "Inter";
+	margin: 0px;
+	padding: 0px;
 }
+
 
  body {
 	font-family: var(--primary-font-family);
+	background-color: var(--color-backgroud-general);
 } 
 
-h1{
-    color: var(--color-primary);
-}

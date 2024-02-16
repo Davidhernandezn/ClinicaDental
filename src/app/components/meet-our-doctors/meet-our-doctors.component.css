@@ -1,0 +1,133 @@
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .title-left {
+    flex: 1;
+    text-align: left;
+  }
+
+  .title-right {
+    flex: 1;
+    text-align: right;
+  }
+
+  /* Estilos adicionales para hacer el ejemplo más claro */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .title-left,
+    .title-right {
+      flex: initial;
+      text-align: center;
+    }
+  }
+
+  .subtitle{
+    font-weight: bold;
+  }
+
+  .subtitle-color{
+    color: var(--color-secondary);
+  }
+
+
+  /*SLIDER*/
+.slider{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: grey;
+    padding: 0 40px;
+}
+
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+ }
+
+
+.image-content, 
+.card-content{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 10px 14px;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height:100%;
+    width: 100%;
+    background-color: #007bff;
+    border-radius: 25px 25px 0 25px; 
+}
+
+ .card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 3px;
+ }
+
+ .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:4px solid rgb(211, 33, 33);
+ }
+
+ .slide-content{
+    margin: 0 40px;
+ }
+
+
+.name{
+    font-weight: 400px;
+    color: var(--color-black-and-gray-primary);
+    line-height: 34px;
+    text-align: center;
+}
+
+.descripcion{
+    text-align: center;
+    font-weight: 400px;
+}
+
+.image-content{
+    row-gap: 5px;
+}
+
+.button{
+    border-color: #007bff;
+    background-color: #fff;
+    color: #007bff;
+}
