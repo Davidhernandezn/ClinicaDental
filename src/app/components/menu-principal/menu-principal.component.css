@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
     border-bottom: 1.2px solid #BCBCBC;
   }
   
@@ -29,8 +31,7 @@
   }
   
   .menu li {
-    margin-right: 20px;
-
+    margin-right: 22px;
   }
   
   .menu li a{
@@ -56,7 +57,7 @@
     cursor: pointer;
     font-weight: 600;
     transition: background-color 0.3s ease;
-    padding: 12px 40px;
+    padding: 8px 22px;
   }
   
   .menu li:last-child button:hover {
@@ -92,7 +93,10 @@
     }
   }
 
-  
+  nav {
+    max-width: 98%;
+    margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+}
   h1{
     color: var(--color-black-and-gray-primary);
 }
