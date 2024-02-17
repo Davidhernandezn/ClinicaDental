@@ -4,14 +4,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SliderService {
+  constructor() {}
 
-  constructor() { }
-  carga(archivos:String[]){
-    for(let archivo of archivos){
-      let script = document.createElement("script");
-      script.src = "../../assets/javascript/"+archivo+".js";
-      let body = document.getElementsByTagName("swiper-element-bundle.min")[0];
-      body.appendChild( script );
-    }
+  async executeSliderScript() {
+    // Importa el archivo JavaScript
+    const module ='../../assets/javascript/slide.js';
+    // Ejecuta cualquier función o código necesario del archivo JavaScript
+    console.log("fdsfafa")
   }
 }

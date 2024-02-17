@@ -8,12 +8,11 @@ import { MeetOurDoctorsComponent } from './components/meet-our-doctors/meet-our-
 import { FormAppoinmentNewsletterComponent } from './components/form-appoinment-newsletter/form-appoinment-newsletter.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'; // Importa FormsModule
-
+import { ListaDoctoresService } from './services/lista.doctores.service';
 // import function to register Swiper custom elements
-// import { register } from 'swiper/element/bundle';
-// // register Swiper custom elements
-// register();
-
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+register();
 
 @NgModule({
   declarations: [
@@ -28,8 +27,8 @@ import { FormsModule } from '@angular/forms'; // Importa FormsModule
     HttpClientModule,
     FormsModule 
   ],
-  providers: [],
+  providers: [ListaDoctoresService],
   bootstrap: [AppComponent],
-  // schemas:[CUSTOM_ELEMENTS_SCHEMA],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }

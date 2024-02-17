@@ -1,60 +1,51 @@
-<!--TITULOS-->
 <div class="container-wrapper">
-<div class="container">
+  <div class="container">
     <div class="title-left">
-      <h2>Meet Some of Our <br>
-       <span class="subtitle">Brains</span> </h2>
+      <h2>
+        Meet Some of Our <br />
+        <span class="subtitle">Brains</span>
+      </h2>
     </div>
     <div class="title-right">
-      <h2 class="subtitle ">MEET OUR <span class="subtitle-color">DOCTORS</span> </h2>
+      <h2 class="subtitle">
+        MEET OUR <span class="subtitle-color">DOCTORS</span>
+      </h2>     
     </div>
   </div>
 </div>
 
-<!--SLIDER-->
-<div class="slider">
-<div class="slide-container swiper">
-    <div class="slide-content">
-        <div class="card-wrapper swiper-wrapper">
-            <div class="card swiper-slide">
-                <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="card-image">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png" alt="" class="card-img">
-                    </div>
-                </div>
-
-                <div class="card-content">
-                    <h2 class="name">David Hdez</h2>
-                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi quidem ipsum, quod repellat culpa aliquid ducimus explicabo. Consectetur, quidem ipsum! Animi, voluptates quo ipsam nemo aperiam natus saepe. Necessitatibus.</p>
-
-                    <button class="btn btn-outline-primary">Appoinment</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<!--SLIDE-->
+<!-- Swiper -->
+<section id="seccionSlide">
+  <!-- Swiper -->
+  <div class="containerSlide">
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-</div>
-</div>
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let doctor of doctors">
+          <img
+          [src]="doctor.photo"
+            alt=""
+            class="imgPerfil"
+          />
+          <div class="card-description">
+            <div class="card-title">
+              <h4>{{ doctor.name }}</h4>
+            </div>
+            <div class="card-text">
+              <p>{{ doctor.specialty }} <br> {{ doctor.university }}</p>
+            </div>
+            <div class="card-link">
+              <button type="button" class="btn btn-outline-primary">
+                Appoinment
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
 
-<!--SWIPER JS-->
-<!-- <script src="../../../assets/javascript/swiper-bundle.min.js"></script>
-<script src="../../../assets/javascript/script.js"></script> -->
-
-    <!-- Swiper JS
-    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
-    loop="true">
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
-    <swiper-slide>Slide 6</swiper-slide>
-    <swiper-slide>Slide 7</swiper-slide>
-    <swiper-slide>Slide 8</swiper-slide>
-    <swiper-slide>Slide 9</swiper-slide>
-  </swiper-container> -->

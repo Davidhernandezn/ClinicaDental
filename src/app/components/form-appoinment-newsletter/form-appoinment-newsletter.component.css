@@ -1,6 +1,55 @@
+/* .container-cita {
+  display: flex;
+  justify-content: center;
+} */
+.container-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+}
+
+.title-left {
+  flex: 1;
+  text-align: left;
+}
+
+.title-right {
+  flex: 1;
+  text-align: right;
+}
+
+/** Estilos adicionales para hacer el ejemplo más claro **/
+@media (max-width: 768px) {
+  .container-title {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title-left,
+  .title-right {
+    flex: initial;
+    text-align: center;
+  }
+}
+
+.subtitle{
+  font-weight: bold;
+}
+
+.subtitle-color{
+  color: var(--color-secondary);
+}
+
+
+/*ESTILOS PARA APARTADO FORM*/
+
+/*ESTILOS NEWSLETTER*/
 .card-newsletter {
     position: relative;
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
