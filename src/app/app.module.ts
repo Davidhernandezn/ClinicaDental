@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import { MenuPrincipalComponent } from './components/menu-principal/menu-principal.component';
 import { MeetOurDoctorsComponent } from './components/meet-our-doctors/meet-our-doctors.component';
 import { FormAppoinmentNewsletterComponent } from './components/form-appoinment-newsletter/form-appoinment-newsletter.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms'; // Importa FormsModule
+
 // import function to register Swiper custom elements
-import { register } from 'swiper/element/bundle';
-// register Swiper custom elements
-register();
+// import { register } from 'swiper/element/bundle';
+// // register Swiper custom elements
+// register();
 
 
 @NgModule({
@@ -21,10 +24,12 @@ register();
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas:[CUSTOM_ELEMENTS_SCHEMA],
+  // schemas:[CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }
