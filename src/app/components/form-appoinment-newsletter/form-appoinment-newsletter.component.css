@@ -1,65 +1,17 @@
-/* .container-cita {
-  display: flex;
-  justify-content: center;
-} */
-.container-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 20px;
-}
-
-.title-left {
-  flex: 1;
-  text-align: left;
-}
-
-.title-right {
-  flex: 1;
-  text-align: right;
-}
-
-/** Estilos adicionales para hacer el ejemplo más claro **/
-@media (max-width: 768px) {
-  .container-title {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .title-left,
-  .title-right {
-    flex: initial;
-    text-align: center;
-  }
-}
-
-.subtitle{
-  font-weight: bold;
-}
-
-.subtitle-color{
-  color: var(--color-secondary);
-}
-
-
-/*ESTILOS PARA APARTADO FORM*/
-
 /*ESTILOS NEWSLETTER*/
 .card-newsletter {
     position: relative;
-    width: 95%;
+    width: 100%;
     max-width: 1200px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 50px;
     background-color: #216582;
     border-radius: 20px;
-    overflow: hidden; /* Oculta el contenido que se desborda de la tarjeta */
+    overflow: hidden;
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 32px;  
     text-align: center;
     margin-bottom: 20px;
     color: white;
@@ -82,28 +34,34 @@
     box-sizing: border-box;
   }
 
+  .form-group input[type="email"],
+  .form-group input[type="text"]{
+     background-color: var(--color-backgroud-input);
+     color: white;
+  }
+
   .corner-circle {
     position: absolute;
-    top: -120px; /* Ajusta la posición para que esté pegado a la esquina superior */
-    left: -60px; /* Ajusta la posición para que esté pegado a la esquina superior */
-    width: 200px; /* Ajusta el tamaño del círculo */
-    height: 200px; /* Ajusta el tamaño del círculo */
-    border: 2px solid #4CAF50; /* Color del borde */
-    border-radius: 50%; /* Hace que el borde tenga forma de círculo */
+    top: -120px;
+    left: -60px;
+    width: 200px; 
+    height: 200px; 
+    border: 2px solid var(--color-backgroud-general);
+    border-radius: 50%; 
     z-index: 1;
-    overflow: hidden; /* Oculta el contenido que se desborda del círculo */
+    overflow: hidden; 
   }
 
   .corner-circle-bajo {
     position: absolute;
-    bottom: -120px; /* Ajusta la posición para que esté pegado a la esquina superior */
-    right: -60px; /* Ajusta la posición para que esté pegado a la esquina superior */
-    width: 200px; /* Ajusta el tamaño del círculo */
-    height: 200px; /* Ajusta el tamaño del círculo */
-    border: 2px solid #4CAF50; /* Color del borde */
-    border-radius: 50%; /* Hace que el borde tenga forma de círculo */
+    bottom: -120px;
+    right: -60px; 
+    width: 200px;
+    height: 200px;
+    border: 2px solid white; 
+    border-radius: 50%; 
     z-index: 1;
-    overflow: hidden; /* Oculta el contenido que se desborda del círculo */
+    overflow: hidden;
   }
 
 

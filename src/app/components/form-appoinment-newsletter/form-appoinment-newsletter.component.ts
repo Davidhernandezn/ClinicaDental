@@ -10,7 +10,10 @@ export class FormAppoinmentNewsletterComponent {
   firstName: string = '';
   email: string = '';
 
-  constructor(private newsletterService: NewsletterService) {}
+  constructor(private newsletterService: NewsletterService) {
+    this.firstName = 'First name';
+    this.email = 'Email address';
+  }
 
   subscribe() {
     console.log('Data sent successfully:', this.firstName, this.email);
