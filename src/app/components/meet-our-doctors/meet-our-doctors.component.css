@@ -39,6 +39,8 @@
   .title-left .title-right{
     text-align: center;
   }
+
+
 }
 
 @media (max-width: 768px) {
@@ -141,8 +143,15 @@
 }
 
 @media (max-width: 360px) {
-  .containerSlide {
-    margin-top: -70px;
+  #seccionSlide {
+    margin-top: -75px;
+    margin-bottom: -150px;
   }
+}
+  @media (max-width: 800px) {
+    #seccionSlide {
+      margin-top: -105px;
+      margin-bottom: -150px;
+    }
 }
 

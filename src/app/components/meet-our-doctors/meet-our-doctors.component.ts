@@ -14,6 +14,7 @@ export class MeetOurDoctorsComponent implements AfterViewInit {
   constructor(private listaDoctoresService: ListaDoctoresService) {}
 
   ngAfterViewInit() {
+    //PARA SLIDER
     const swiper = new Swiper('.swiper-container', {
       navigation: {
         nextEl: '.swiper-button-next',
@@ -45,14 +46,13 @@ export class MeetOurDoctorsComponent implements AfterViewInit {
       } 
     });
 
-    // this.getDoctors(); // Llama al método getDoctors() aquí
   }
 
   ngOnInit(): void {
+    //CONSULTAR DOCTORES
     this.listaDoctoresService.getDoctors().subscribe((data: any) => {
       this.doctors = data.list;
     });
-    
   }
   
 }
