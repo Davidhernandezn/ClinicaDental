@@ -1,102 +1,133 @@
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    padding-left: 0px;
-    padding-right: 0px;
-    border-bottom: 1.2px solid #BCBCBC;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 48px;
-    margin-right: 10px;
-  }
-
-  .title{
-    margin-left: 15px;
-  }
-  
-  .menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-  }
-  
-  .menu li {
-    margin-right: 22px;
-  }
-  
-  .menu li a{
-    text-decoration: none; 
-    font-weight: 400;
-    color: var(--color-black-and-gray-secondary);
- }
-
-  .menu li:last-child {
-    margin-right: 0;
-  }
-  
-  .menu li:first-child a {
-    color: var(--color-primary);
-    font-weight: 600;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 1.2px solid #BCBCBC;
 }
-  
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 48px;
+  margin-right: 10px;
+}
+
+.title{
+  margin-left: 15px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.menu li {
+  margin-right: 22px;
+}
+
+.menu li a{
+  text-decoration: none; 
+  font-weight: 400;
+  color: var(--color-black-and-gray-secondary);
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li:first-child a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
 .menu li:last-child button {
-    background-color: #007bff; /* Cambia este color por el que desees */
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-    padding: 8px 22px;
-  }
-  
-  .menu li:last-child button:hover {
-    background-color: #0056b3; /* Cambia este color por el que desees */
-  }
-  
-  @media (max-width: 768px) {
-    .menu {
-      display: none;
-    }
-  
-    .menu.open {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      padding: 20px;
-    }
-  
-    .menu.open li {
-      margin-bottom: 10px;
-    }
-  
-    .menu.open li:last-child {
-      margin-bottom: 0;
-    }
-  
-    .menu.open li button {
-      margin-top: 10px;
-    }
+  background-color: #007bff; /* Cambia este color por el que desees */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  padding: 8px 22px;
+}
+
+.menu li:last-child button:hover {
+  background-color: #0056b3; /* Cambia este color por el que desees */
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
   }
 
-  nav {
-    max-width: 98%;
-    margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Cambia el valor a "white" para un fondo blanco sólido */
+    padding: 20px;
+    border-radius: 5px; /* Agrega un borde redondeado para mejorar la apariencia */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra para resaltar el menú */
+    z-index: 1; /* Asegura que el menú esté por encima de otros elementos */
+  }
+
+  .menu.open li {
+    margin-bottom: 10px;
+  }
+
+  .menu.open li:last-child {
+    margin-bottom: 0;
+  }
+
+  .menu.open li button {
+    margin-top: 10px;
+  }
 }
-  h1{
-    color: var(--color-black-and-gray-primary);
+
+#hamburger-button i {
+  color: var(--color-primary);
+}
+
+#hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
+
+/* Estilo por defecto del botón de hamburguesa */
+.hamburger-button {
+  display: none; 
+}
+
+/* Estilo para mostrar el botón de hamburguesa cuando la pantalla tenga 768px o menos */
+@media (max-width: 768px) {
+  .hamburger-button {
+    display: block; /* Muestra el botón cuando la pantalla tenga 768px o menos */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+}
+
+/* Estilo para ocultar el botón de hamburguesa cuando la pantalla tenga más de 768px */
+@media (min-width: 769px) {
+  .hamburger-button {
+    display: none; /* Oculta el botón cuando la pantalla tenga más de 768px */
+  }
 }
