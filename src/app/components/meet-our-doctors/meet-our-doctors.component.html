@@ -1,6 +1,5 @@
 <div class="container-wrapper">
   <div class="container">
-    
     <div class="title-left">
       <h2>
         Meet Some of Our <br />
@@ -8,15 +7,14 @@
       </h2>
     </div>
     <div class="title-right">
-      <h2 class="subtitle">MEET OUR <span class="subtitle-color">DOCTORS</span>
-              <!-- <div class="borde"></div> -->
-      </h2> 
+      <h2 class="subtitle">
+        MEET OUR <span class="subtitle-color">DOCTORS</span>
+      </h2>
     </div>
   </div>
 </div>
 
 <!--SLIDE-->
-<!-- Swiper -->
 <section id="seccionSlide">
   <!-- Swiper -->
   <div class="containerSlide">
@@ -25,17 +23,16 @@
     <div class="swiper-container mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide" *ngFor="let doctor of doctors">
-          <img
-          [src]="doctor.photo"
-            alt=""
-            class="imgPerfil"
-          />
+          <img [src]="doctor.photo" alt="" class="imgPerfil" />
           <div class="card-description">
             <div class="card-title">
               <h4>{{ doctor.name }}</h4>
             </div>
             <div class="card-text">
-              <p>{{ doctor.specialty }} <br> {{ doctor.university }}</p>
+              <p>
+                {{ doctor.specialty }} <br />
+                {{ doctor.university }}
+              </p>
             </div>
             <div class="card-link">
               <button type="button" class="btn btn-outline-primary">
@@ -48,5 +45,3 @@
     </div>
   </div>
 </section>
-  
-

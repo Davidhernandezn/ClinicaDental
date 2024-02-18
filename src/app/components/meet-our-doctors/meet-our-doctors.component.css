@@ -1,6 +1,7 @@
 .container-wrapper {
   margin-top: 20px;
 }
+
 @media (max-width: 360px) {
   .container-wrapper {
     margin-top: 20px;
@@ -14,14 +15,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 5%;
-}
-
-.borde {
-  margin: 0 auto; 
-  position: relative;
-  bottom: 1;
-  left: 50%;
-  border-bottom: 0.1em solid #ccc;
 }
 
 .title-left {
@@ -48,7 +41,6 @@
   }
 }
 
-/* Estilos adicionales para hacer el ejemplo más claro */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -64,7 +56,6 @@
 
 /*SLIDE*/
 #seccionSlide {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   display: flex;
   justify-content: center;
@@ -78,7 +69,7 @@
 .containerSlide {
   width: 100%;
   padding: 10px 40px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .containerSlide .swiper-container {
@@ -89,7 +80,6 @@
 .containerSlide .swiper-slide {
   position: relative;
   text-align: center;
-  font-size: 18px;
   text-align: start;  
 }
 
@@ -106,9 +96,17 @@
   filter: grayscale(90%);
 }
 
-.containerSlide .swiper-slide .card-description {
+.containerSlide .swiper-slide .card-description .card-title h4{
   text-align: center;
-  padding: 1rem 1rem;
+  font-size: 20px;
+  color: var(--color-black-and-gray-primary);
+}
+
+.containerSlide .swiper-slide .card-description .card-text p{
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-black-and-gray);
+  line-height: 24px;
 }
 
 .containerSlide .swiper-slide .card-title, .containerSlide .swiper-slide .card-text {
@@ -128,6 +126,7 @@
 .swiper-button-prev {
   margin-top: 100px;
 }
+
 
 @media (max-width: 800px) {
   .containerSlide .swiper-slide img {
